@@ -774,3 +774,61 @@ cursor: pointer;
 .testimonials .testimonials-content .slide-controls div.active {
   background-color: #febd01;
 }
+
+/*Blogs*/
+.blogs {
+  padding: 100px 15px;
+  background-color: #ffffff;
+}
+
+.blogs .section-title h1:before {
+  left: 0%;
+}
+
+.blogs .blogs-content {
+flex: 0 0 100%;
+max-width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.blogs .blogs-content .box {
+  flex: 0 0 calc(33.33% - 25px);
+  max-width: calc(33.33% - 25px);
+}
+
+.blogs .blogs-content .box .img img {
+width: 100%;
+display: block;
+}
+
+.blogs .blogs-content .box .info {
+padding: 10px 0;
+}
+
+.blogs .blogs-content .box .info span {
+font-size: 12px;
+color: #838383;
+display: inline-block
+}
+
+.blogs .blogs-content .box h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.blogs .blogs-content .box p {
+  font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+color: #838383;
+margin: 0;
+}
+
+.blogs .blogs-content .box a {
+  
+}
