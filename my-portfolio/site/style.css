@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); /*icones das redes sociais*/
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -68,6 +72,13 @@ header {
   padding: 0px 15px;
   z-index: 10;
 }
+
+header {
+  top: 0px;
+  position: sticky;
+  background-color: #000000;  
+  z-index: 11; /*pra img do portfolio não sobressair no header*/
+} 
 
 header .row {
 justify-content: space-between;
@@ -941,3 +952,53 @@ margin: 0 0 10px;
     background-color: #000000;
     color: #ffffff;
   }
+
+/*Footer*/
+footer {
+  padding: 70px 15px;
+  background-color: #0c0c17;
+}
+
+footer .logo {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer .social a {
+  color: #999999;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 12px;
+  transition: all .5s ease;
+  text-decoration: none;
+}
+
+footer .social a:hover {
+  color: #ffffff;
+}
+
+/*copyright*/
+.copyright {
+  background-color: #0c0c17;
+  border-top: 1px solid #1d1d27;
+  padding: 15px;
+}
+
+.copyright p {
+  color: #838383;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+}

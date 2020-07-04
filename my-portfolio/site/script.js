@@ -120,7 +120,6 @@ function changeSlide(currentSlide) {
 }
 
 function autoPlay() {
-  console.log("call")
   if (autoSlide == slideDots - 1) {
     autoSlide = 0
   } else {
@@ -132,3 +131,16 @@ function autoPlay() {
 let timer = setInterval(autoPlay, 4000)
 
 window.onload = load()
+
+//navbar links
+const navbar = document.querySelector(".navbar")
+a = navbar.querySelectorAll("a")
+
+a.forEach(function (element) {
+  element.addEventListener("click", function () {
+    for (let i = 0; i < a.length; i++) {
+      a[i].classList.remove("active")
+    }
+    this.classList.add("active")
+  })
+})
